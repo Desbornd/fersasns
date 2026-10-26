@@ -41,7 +41,7 @@ namespace fersrans
                 return;
             }
 
-            string sideType = (a == b || b == c) ? "Равносторонний" :
+            string sideType = (a == b && b == c) ? "Равносторонний" :
                              (a == b || b == c || a == c) ? "Равнобедренный" : "Разносторонний";
 
             string resultMessage = $"Анализ завершен успешно!\n\nТип:{sideType} треугольник.";
